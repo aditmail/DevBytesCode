@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listVideoFragment">
+
+    <fragment
+        android:id="@+id/listVideoFragment"
+        android:name="com.example.devbytesexercice.ui.fragment.ListVideoFragment"
+        android:label="Dev Byte Videos"
+        tools:layout="@layout/fragment_list_video">
+        <action
+            android:id="@+id/action_listVideoFragment_to_detailVideoFragment"
+            app:destination="@id/detailVideoFragment" />
+        <action
+            android:id="@+id/action_listVideoFragment_to_listProfileFragment"
+            app:destination="@id/listProfileFragment" />
+    </fragment>
+
+<!--    android:label="{keyUrl}"-->
+    <fragment
+        android:id="@+id/detailVideoFragment"
+        android:name="com.example.devbytesexercice.ui.fragment.DetailVideoFragment"
+        tools:layout="@layout/fragment_detail_video">
+        <argument
+            android:name="keyUrl"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailVideoFragment_to_listVideoFragment"
+            app:destination="@id/listVideoFragment"
+            app:popUpTo="@id/listVideoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/listProfileFragment"
+        android:name="com.example.devbytesexercice.ui.fragment.ListProfileFragment"
+        android:label="List Profile" />
+</navigation>

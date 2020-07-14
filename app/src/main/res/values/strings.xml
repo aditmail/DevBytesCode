@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">DevBytesExercice</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_internet">No Internet Connection...\nTap to Refresh</string>
+    <string name="updated_at">Article Updated At: %s</string>
+    <string name="add_image">Add Image</string>
+    <string name="insert_new_profile">Insert New Profile</string>
+    <string name="username">Username</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="add_profile">Add Profile</string>
+    <string name="tutup">Tutup</string>
+</resources>
